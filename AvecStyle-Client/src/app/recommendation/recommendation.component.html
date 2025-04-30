@@ -1,0 +1,52 @@
+<div class="recommendation-page">
+    <button class="refresh-btn" (click)="getOutfits()" [disabled]="isLoading">
+        <i class="fas" [class.fa-sync-alt]="!isLoading" [class.fa-spinner]="isLoading" [class.fa-spin]="isLoading"></i>
+        {{ 'recommendation.refresh' | translate }}
+    </button>
+
+    <div class="outfits-container" *ngIf="outfits.length > 0">
+        <div class="outfit-card" *ngFor="let outfit of outfits">
+            <div class="article-box accessory">
+                <img [src]="outfit.accessory.imageURL || 'assets/placeholder.png'" alt="accessory">
+                <div class="article-info">
+                    <h3>{{ 'recommendation.articles.accessory' | translate }}</h3>
+                    <a [href]="outfit.accessory.shopURL" target="_blank" class="shop-link">
+                        {{ 'recommendation.shop' | translate }}
+                    </a>
+                </div>
+            </div>
+
+            <div class="article-box top">
+                <img [src]="outfit.top.imageURL || 'assets/placeholder.png'" alt="top">
+                <div class="article-info">
+                    <h3>{{ 'recommendation.articles.top' | translate }}</h3>
+                    <a [href]="outfit.top.shopURL" target="_blank" class="shop-link">
+                        {{ 'recommendation.shop' | translate }}
+                    </a>
+                </div>
+            </div>
+
+            <div class="article-box bottom">
+                <img [src]="outfit.bottom.imageURL || 'assets/placeholder.png'" alt="bottom">
+                <div class="article-info">
+                    <h3>{{ 'recommendation.articles.bottom' | translate }}</h3>
+                    <a [href]="outfit.bottom.shopURL" target="_blank" class="shop-link">
+                        {{ 'recommendation.shop' | translate }}
+                    </a>
+                </div>
+            </div>
+
+            <div class="article-box shoes">
+                <img [src]="outfit.shoes.imageURL || 'assets/placeholder.png'" alt="shoes">
+                <div class="article-info">
+                    <h3>{{ 'recommendation.articles.shoes' | translate }}</h3>
+                    <a [href]="outfit.shoes.shopURL" target="_blank" class="shop-link">
+                        {{ 'recommendation.shop' | translate }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-settings-popup [isOpen]="isSettingsOpen" (closePopup)="closeSettings()"></app-settings-popup>

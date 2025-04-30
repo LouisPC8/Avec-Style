@@ -1,0 +1,43 @@
+{
+    "home": {
+        "h1": "Welcome to Avec Style",
+        "p": "Discover your perfect style with our curated collection",
+        "button": "Get Started"
+    },
+    "settings": {
+        "title": "Style Preferences",
+        "gender": {
+            "label": "Gender",
+            "women": "Women",
+            "men": "Men"
+        },
+        "style": {
+            "label": "Style",
+            "streetwear": "Streetwear",
+            "minimalist": "Minimalist",
+            "retro": "Retro",
+            "casual-chic": "Casual Chic",
+            "normcore": "Normcore",
+            "grunge": "Grunge"
+        },
+        "shape": {
+            "label": "Body Shape",
+            "hourglass": "Hourglass",
+            "pear": "Pear",
+            "inverted-triangle": "Inverted Triangle",
+            "rectangle": "Rectangle",
+            "apple": "Apple"
+        },
+        "save": "Save Preferences"
+    },
+    "recommendation": {
+        "refresh": "Get New Recommendations",
+        "articles": {
+            "accessory": "Accessory",
+            "top": "Top",
+            "bottom": "Bottom",
+            "shoes": "Shoes"
+        },
+        "shop": "Shop Now"
+    }
+}

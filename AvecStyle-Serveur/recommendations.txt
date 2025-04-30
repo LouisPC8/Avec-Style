@@ -1,0 +1,12 @@
+ArticleId: 3
+ShopURL: https://qcstreetwear.ca/collections/casquettes-et-tuques/products/boston-red-sox-mvp-cap-black-grey
+ImageURL: https://qcstreetwear.ca/cdn/shop/files/Captured_ecran2023-07-09a12.51.15_1296x.png?v=1689624458
+--------------------------------------------------
+ArticleId: 7
+ShopURL: https://qcstreetwear.ca/collections/casquettes-et-tuques/products/cuffed-knit-beanie-brown
+ImageURL: https://qcstreetwear.ca/cdn/shop/files/WHC200BDLarge_1296x.png?v=1732455734
+--------------------------------------------------
+ArticleId: 6
+ShopURL: https://qcstreetwear.ca/collections/casquettes-et-tuques/products/cotton-twill-army-cap-beige
+ImageURL: https://qcstreetwear.ca/cdn/shop/files/Captured_ecran2024-05-09a16.56.11_1296x.png?v=1715288228
+--------------------------------------------------

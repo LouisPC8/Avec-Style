@@ -1,0 +1,43 @@
+{
+    "home": {
+        "h1": "Bienvenue sur Avec Style",
+        "p": "Découvrez votre style parfait avec notre collection sélectionnée",
+        "button": "Commencer"
+    },
+    "settings": {
+        "title": "Préférences de Style",
+        "gender": {
+            "label": "Genre",
+            "women": "Femmes",
+            "men": "Hommes"
+        },
+        "style": {
+            "label": "Style",
+            "streetwear": "Streetwear",
+            "minimalist": "Minimaliste",
+            "retro": "Rétro",
+            "casual-chic": "Casual Chic",
+            "normcore": "Normcore",
+            "grunge": "Grunge"
+        },
+        "shape": {
+            "label": "Morphologie",
+            "hourglass": "Sablier",
+            "pear": "Poire",
+            "inverted-triangle": "Triangle Inversé",
+            "rectangle": "Rectangle",
+            "apple": "Pomme"
+        },
+        "save": "Sauvegarder"
+    },
+    "recommendation": {
+        "refresh": "Nouvelles Recommandations",
+        "articles": {
+            "accessory": "Accessoire",
+            "top": "Haut",
+            "bottom": "Bas",
+            "shoes": "Chaussures"
+        },
+        "shop": "Acheter"
+    }
+}

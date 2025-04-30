@@ -1,0 +1,6 @@
+@AvecStyle_Serveur_HostAddress = http://localhost:5064
+
+GET {{AvecStyle_Serveur_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

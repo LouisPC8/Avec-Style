@@ -1,0 +1,24 @@
+<header class="app-header">
+  <h1><a routerLink="/">Avec Style</a></h1>
+  <div class="header-controls">
+    <select class="language-select" name="language" [(ngModel)]="language" (change)="changeLanguage()">
+      <option value="fr">Français</option>
+      <option value="en">English</option>
+    </select>
+    <button class="settings-btn" (click)="toggleSettings()">
+      <i class="fas fa-cog"></i>
+    </button>
+  </div>
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<app-settings-popup [isOpen]="isSettingsOpen" (closePopup)="toggleSettings()"></app-settings-popup>
+
+<footer class="app-footer">
+  <div class="contact-info">
+    <span><i class="fas fa-envelope"></i>contact&#64;avecstyle.com</span>
+  </div>
+</footer>

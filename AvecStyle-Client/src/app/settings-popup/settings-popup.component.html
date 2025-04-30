@@ -1,0 +1,48 @@
+<div class="overlay" *ngIf="isOpen" (click)="close()">
+    <div class="popup" (click)="$event.stopPropagation()">
+        <div class="popup-header">
+            <h2>{{ 'settings.title' | translate }}</h2>
+            <button class="close-btn" (click)="close()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <form class="settings-form" (ngSubmit)="saveSettings()">
+            <div class="form-group">
+                <label>{{ 'settings.gender.label' | translate }}</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="gender" [value]="true" [(ngModel)]="gender">
+                        {{ 'settings.gender.women' | translate }}
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" [value]="false" [(ngModel)]="gender">
+                        {{ 'settings.gender.men' | translate }}
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="style">{{ 'settings.style.label' | translate }}</label>
+                <select id="style" [(ngModel)]="style" name="style" required>
+                    <option value="streetwear">{{ 'settings.style.streetwear' | translate }}</option>
+                    <option value="minimaliste">{{ 'settings.style.minimalist' | translate }}</option>
+                    <option value="retro">{{ 'settings.style.retro' | translate }}</option>
+                    <option value="casual-chic">{{ 'settings.style.casual-chic' | translate }}</option>
+                    <option value="normcore">{{ 'settings.style.normcore' | translate }}</option>
+                    <option value="grunge">{{ 'settings.style.grunge' | translate }}</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="shape">{{ 'settings.shape.label' | translate }}</label>
+                <select id="shape" [(ngModel)]="shape" name="shape" required>
+                    <option *ngFor="let shapeOption of shapes" [value]="shapeOption.value">
+                        {{ 'settings.shape.' + shapeOption.label.toLowerCase() | translate }}
+                    </option>
+                </select>
+            </div>
+
+            <button type="submit" class="save-btn">{{ 'settings.save' | translate }}</button>
+        </form>
+    </div>
+</div>
