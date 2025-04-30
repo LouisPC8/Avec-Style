@@ -3,6 +3,9 @@
     "mssql1": {
       "type": "mssql",
       "connectionId": "ConnectionStrings:AvecStyle_ServeurContext"
+    },
+    "apis1": {
+      "type": "apis"
     }
   }
 }
